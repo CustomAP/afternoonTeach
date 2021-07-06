@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Afternoon Teach</string>
+    
+    <string name="login_for_tea">Login for Tea</string>
+    <string name="enter_your_id">Enter your ID</string>
+    <string name="enter_your_pw">Enter your Password</string>
+    <string name="login">Login</string>
+    
+    <string name="tea_preferences">Tea Preferences</string>
+    <string name="sugar">Sugar</string>
+    <string name="milk_tea">Milk Tea</string>
+    <string name="black_tea">Black Tea</string>
+    <string name="get_my_tea">Get my Tea</string>
+
+    <string-array name="sugar_entries">
+        <item>No</item>
+        <item>1 Teaspoon</item>
+        <item>2 Teaspoon</item>
+        <item>3 Teaspoon</item>
+    </string-array>
+</resources>

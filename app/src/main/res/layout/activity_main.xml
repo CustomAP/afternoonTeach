@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tea_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvGreeting"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/llTeaPreferences"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/llTeaPreferences"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/sugar"
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp" />
+
+            <Spinner
+                android:id="@+id/sSugarOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/sugar_entries" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rgTeaType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:checkedButton="@id/rbBlackTea"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/black_tea"
+                android:id="@+id/rbBlackTea"
+                android:layout_margin="5dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/rbMilkTea"
+                android:text="@string/milk_tea" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/bGetMyTea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/get_my_tea"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>
